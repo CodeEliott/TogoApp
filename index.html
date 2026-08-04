@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Solution - Apprendre en jouant</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="ecran"></div>
+
+<div id="bandeau">
+  <button type="button" id="btn-retour" class="mini">Retour</button>
+  <span id="titre-bandeau"></span>
+  <span id="joueur-bandeau"></span>
+</div>
+
+<!-- Coeur de l'application. Ordre de chargement important : chaque fichier
+     depend des precedents. Pas de modules ES : le double-clic sur index.html
+     (protocole file://) doit fonctionner sur les vieux navigateurs. -->
+<script charset="utf-8" src="js/util.js"></script>
+<script charset="utf-8" src="js/icons.js"></script>
+<script charset="utf-8" src="js/i18n.js"></script>
+<script charset="utf-8" src="js/storage.js"></script>
+<script charset="utf-8" src="js/speech.js"></script>
+<script charset="utf-8" src="js/mastery.js"></script>
+
+<!-- Banques d'exercices -->
+<script charset="utf-8" src="js/questions/math.js"></script>
+<script charset="utf-8" src="js/questions/francais.js"></script>
+<script charset="utf-8" src="js/questions/monde.js"></script>
+
+<script charset="utf-8" src="js/registry.js"></script>
+<script charset="utf-8" src="js/engine.js"></script>
+<script charset="utf-8" src="js/ui.js"></script>
+<script charset="utf-8" src="js/app.js"></script>
+</body>
+</html>
